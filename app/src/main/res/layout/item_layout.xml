@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/medium">
+
+    <ImageView
+        android:id="@+id/iv_poster_item"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/poster_bumblebee" />
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/iv_poster_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/great"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spider-Man: Into the Spider-Verse"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_date_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="December 6, 2018"/>
+
+        <TextView
+            android:id="@+id/tv_score_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="83%"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
